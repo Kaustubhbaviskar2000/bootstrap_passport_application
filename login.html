@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Passport Application</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa; /* Light gray background */
+        }
+        .login-container {
+            background-color: #ffffff; /* White background for login box */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        }
+        .login-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .login-form {
+            max-width: 400px;
+            margin: 0 auto; /* Center the form horizontally */
+        }
+        .btn-login {
+            font-size: 16px; /* Larger font size for button text */
+            padding: 10px 20px; /* Padding around button text */
+        }
+        .signup-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Passport e-Seva</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="signup.html">Signup</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="new_passport.html">New Passport</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="complaint.html">Complaint</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="history_page.html">History</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="passport_renewwel.html">Renewal</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="login-container">
+            <h2 class="login-title">Login</h2>
+            <form class="login-form">
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block btn-login">Login</button>
+            </form>
+            <div class="signup-link">
+                <p>If you don't have an account, <a href="signup.html">sign up here</a>.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

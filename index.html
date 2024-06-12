@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passport e-Seva Dashboard</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+       .navbar {
+    background-color: #343a40; /* Darker background for navbar */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar-brand {
+    font-size: 1.8rem; /* Larger font size for brand */
+}
+
+.nav-link {
+    color: #ffffff; /* White color for links */
+}
+
+.nav-link:hover {
+    color: #f8f9fa; /* Lighter shade on hover */
+}
+
+/* Enhanced Jumbotron Styling */
+.jumbotron {
+    background-image: url('passport_background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    padding: 150px 0; /* Increased padding for better visibility */
+    margin-bottom: 0;
+}
+
+/* Content Box Styling */
+.content-box {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333333;
+    margin-bottom: 30px;
+}
+
+.content-box h2 {
+    color: #007bff; /* Blue color for headings */
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    .jumbotron {
+        padding: 100px 0;
+    }
+}
+
+/* Additional Decorative Elements */
+.info-section img {
+    border-radius: 10px; /* Rounded corners for images */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.jumbotron h1 {
+    color: #000000; /* Black color for text */
+    font-weight: bold; /* Make text bold */
+}
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Passport e-Seva</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="signup.html">Signup</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="new_passport.html">New Passport</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="complaint.html">Complaint</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="history_page.html">History</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="passport_renewwel.html">Renewal</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron text-center">
+        <h1>Welcome to Passport e-Seva</h1>
+        <p class="lead">Your one-stop solution for all passport-related services</p>
+    </div>
+
+    <div class="container info-section">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="content-box">
+                    <h2>About Passport Services</h2>
+                    <p>Applying for a passport is a straightforward process that can be completed online. The Passport e-Seva portal provides all the necessary services to apply for a new passport, renew an existing passport, and check the status of your application. We are committed to making the process as smooth and efficient as possible.</p>
+                    <img src="passport.jpg" class="img-fluid" alt="Passport Information">
+                    <p>To apply for a new passport, click on the "New Passport" link in the navigation bar and fill out the online application form. Ensure you have all the necessary documents ready for upload. For existing passport holders, you can easily renew your passport by clicking on the "Renewal" link and following the instructions provided. If you have any issues or complaints, our customer service is here to help. Use the "Complaint" link to register your issues.</p>
+                    <p>Keep track of your application status and history by clicking on the "History" link. This feature allows you to monitor the progress of your application and ensures you stay informed throughout the process. Our goal is to provide a hassle-free experience for all your passport-related needs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renew Passport</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .form-container {
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h2 {
+            margin-bottom: 20px;
+        }
+        .form-container .form-group {
+            margin-bottom: 15px;
+        }
+        .form-container .btn-submit {
+            float: right;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Passport e-Seva</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="signup.html">Signup</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="new_passport.html">New Passport</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="complaint.html">Complaint</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="history_page.html">History</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="passport_renewwel.html">Renewal</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="form-container">
+            <h2>Renew Passport</h2>
+            <form>
+                <div class="form-group">
+                    <label for="passportNumber">Current Passport Number</label>
+                    <input type="text" class="form-control" id="passportNumber" placeholder="Enter your current passport number">
+                </div>
+                <div class="form-group">
+                    <label for="expiryDate">Expiry Date</label>
+                    <input type="date" class="form-control" id="expiryDate">
+                </div>
+                <div class="form-group">
+                    <label for="reason">Reason for Renewal</label>
+                    <select class="form-control" id="reason">
+                        <option value="expiry">Expiry</option>
+                        <option value="pages">Exhaustion of Pages</option>
+                        <option value="damaged">Damaged</option>
+                        <option value="lost">Lost</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="personalDetailsChange">Change in Personal Details</label>
+                    <input type="text" class="form-control" id="personalDetailsChange" placeholder="Specify the changes (if any)">
+                </div>
+                <button type="submit" class="btn btn-primary btn-sm btn-submit">Submit Renewal</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
